@@ -1,0 +1,25 @@
+<p>first works!</p>
+
+<h1 [ngClass] = "isGreen ? 'text-green' : 'text-red'">{{textm | uppercase}}</h1>
+<ul *ngIf  = "list.length > 0" >
+    <li *ngFor ="let n of list">{{n}}</li>
+</ul>
+
+<p *ngIf = "list.length == 0"> No Data..!!</p>
+
+<p>{{cash |currency :'INR'}}</p>
+
+<!-- <input type="text" [value]="textm" (keyup.enter)="textm=$event.target.value" id="ui" [disabled] = "isGreen"> -->
+<input type="text" [value]="textm" [(ngModel)]="textm" id="u">
+
+<!-- <h2 ngClass="text-green">{{textm}}</h2> -->
+<h2 >{{textm}}</h2>
+
+<input type="text" [value]="textm" [(ngModel)]="textm" id="ud">
+
+
+
+<!-- <button (click)="onClick()">Click</button> -->
+
+
+
