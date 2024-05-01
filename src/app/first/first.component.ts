@@ -27,6 +27,14 @@ export class FirstComponent {
       
   //   }
 
+// this fuction is not working
+   onEnterKeyPress(eventm: any) {
+    if (eventm.key === 'Enter') {
+      // Assign the value of the input field to textm
+      this.textm = (<HTMLInputElement>eventm.target).value;
+    }
+    console.log(eventm)
+  }
   
 
 }

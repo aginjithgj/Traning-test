@@ -20,6 +20,17 @@
     <p>name line</p>
 </h1>
 
+<input #myInput type="text"  (keyup.enter)="textm = myInput.value" id="ui" [disabled]="isGreen">
+
+<h1>
+    <p>name line2</p>
+</h1>
+
+<input type="text" (keydown.enter)="onEnterKeyPress($event)">
+
+
+
+
 
 
 <!-- <button (click)="onClick()">Click</button> -->
